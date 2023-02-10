@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/* Nav Bar */
+nav {
+    margin: 20px 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 20px;
+}
+
+.home-btn {
+    background-color: #6464e0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.hamberger-btn {
+    display: none;
+    width: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 98vw;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-line-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    display: flex;
+    font-size: 30px;
+}
+
+.hello {
+    width: 30px;
+}
+
+.left-side-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-side-2 h1 {
+    font-size: 60px;
+}
+
+.left-side-2 h2 {
+    font-size: 35px;
+    color: #c5c559;
+}
+
+.right-side img {
+    width: 30vw;
+} 
+
+/* Project Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-line {
+    width: 8%;
+    height: 5px;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.projects {
+    margin-block: 50px;
+}
+
+
+.project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 20vw;
+}
+
+/* Contact Section */
+
+footer {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logos img {
+    width: 30px;
+}
+
+/* Media queries */
+
+@media screen and (max-width:576px){
+    nav ul {
+        display: none;
+    }
+
+    .hamberger-btn {
+        display: block;
+    }
+
+    nav {
+        justify-content: left;
+    }
+
+    .hero-section {
+        margin-block: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-line-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side img {
+        width: 55vw;
+    }
+
+    .horizontal-line {
+        width: 20%;
+    }
+
+    .project-section {
+        margin-block: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .project-card img {
+        width: 55vw;
+    }
+}
